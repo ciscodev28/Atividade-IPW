@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade</title>
+</head>
+<body>
+    <p id="meu-texto">Este é o texto original que será alterado.</p>
+    <button onclick="alterarTexto()">Clique aqui</button>
+    <script>
+        function alterarTexto() {
+            document.getElementById("meu-texto").innerText = "O texto foi alterado com sucesso!";
+        }
+    </script>
+</body>
+</html>
