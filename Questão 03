@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alterar Texto</title>
+</head>
+<body>
+    
+    <button onclick="alterarTexto()">Clique aqui</button>
+    <input type="number" id="entrada" placeholder="Digite sua idade">
+    <p id="idade"></p>
+    <script>
+        function alterarTexto() {
+            let idade = document.getElementById("entrada").value;
+            if (idade >= 18){
+            document.getElementById("idade").innerText = "Maior de Idade."}
+            else {
+                document.getElementById("idade").innerText = "Menor de Idade."
+            }
+        }
+    </script>
+</body>
+</html>
