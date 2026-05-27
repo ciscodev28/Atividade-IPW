@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function contar(){
+            let resultado = "";
+
+            for (let i = 1; i <=10; i ++){
+                resultado += i + ""
+            }
+
+            document.getElementById("MostrarNumero").innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="contar()">Clique aqui para contar</button>
+
+    <div id="MostrarNumero"></div>
+</body>
+</html>
