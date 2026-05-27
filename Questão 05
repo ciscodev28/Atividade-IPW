@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <button onclick="alterarTexto()">Clique aqui</button>
+    <input type="number" id="entrada" placeholder="Digite sua nota">
+    <p id="nota"></p>
+    <script>
+        function alterarTexto() {
+            let nota = document.getElementById("entrada").value;
+            if (nota >= 6){
+            document.getElementById("nota").innerText = "Aprovado."}
+            else {
+                document.getElementById("nota").innerText = "Reprovado."
+            }
+        }
+    </script>
+</body>
+</html>
